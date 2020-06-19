@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+	--colorOscuro: #1A1E21;
+	--azulPrimario: #3860EC;
+    --azulSecundario: #2247ce;
+    --fondoPrimario: #323941;
+	--fondoSecundario: #1A1E21;
+	--azulPrimario: #3860EC;
+	--azulSecundario: #2247ce;
+	--rojo: #E50914;
+}
+
+/* ESTILOS MAIN */
+
+main {
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* ABOUT ME | SOBRE MI */
+
+/* CONTENEDOR ABOUT ME */
+main .about-me {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #FFF;
+    padding: 10px;
+}
+/* PARAFFO ABOUT ME */
+.about-me p {
+    font-family: 'Bree Serif', serif;
+    font-size: 5em;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.about-me .about-p {
+    font-size: 1.3em;
+    font-family: 'Cinzel', serif;
+    padding: 5px 0;
+
+}
+/* SECCIONES ABOUT ME */
+.about-me article{
+    width: 60%;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 35px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+main p::selection {
+    background: white;
+    color: #000;
+}
+main article::selection {
+    background: #FFF;
+    color: black;
+}
+
+/* CARACTERISTICAS */
+main .caracteristicas {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #FFF;
+}
+/* BLOQUES INDIVIDUALES */
+main .caracteristicas .caracter {
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 1em;
+    text-align: center;
+    background: #FFF;
+    transition: all .3s ease;
+}
+/* TITULO CARACTERISTICAS */
+main .caracteristicas .title { 
+    font-weight: 700;
+    color: #444;
+    margin: 20px 0;
+}
+/* DESCRIPCIONES CARACTERISTICAS */
+main .caracteristicas .description {
+    font-weight: 300;
+    font-size: .9em;
+    color: #222;
+}
+
+main .caracteristicas .caracter:hover{
+    transform: scale(1.1);
+}

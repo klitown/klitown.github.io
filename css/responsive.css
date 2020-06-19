@@ -1,0 +1,72 @@
+/* ITEMS PARA MOVILES */
+@media (max-width:570px) { /* items desde una pantalla de ancho 570px */
+    header {
+        width: 100%;
+        background-color: #000;
+    }
+    .navbar .toggle-menu i {
+        display: block;
+        margin: -60px 10px;
+    }
+    .navbar .menu ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 50%;
+        z-index: 1; /* para que se ponga arriba de lo que se encuentre */
+        background-color: #000;
+        position: fixed;
+        margin-top: 10px;
+        transform: translateX(-1000%);
+        transition: 0.5s ease-in;
+    }
+    .navbar .menu .menu-on {
+        transform: translateX(-4%);
+    }
+    .navbar .menu ul li {
+        margin: 30px;
+        text-transform: uppercase;
+    }
+    .container-info {
+        flex-wrap: wrap-reverse; /* cuando ya no cabe en pantalla encima elementos*/
+        justify-content: center;
+        margin: -50px 50px;
+        text-align: center;
+    }
+    .container-info h1 {
+        font-size: 3em;
+    }
+    .container-info h2 {
+        font-size: 1em;
+    }
+    .img-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-content img {
+        margin-right: 100px;
+        margin-bottom: 20px;
+    }
+
+    .about-me article p {
+        text-align: center;
+        line-height: 60px;
+        font-size: 50px;
+    }
+    .about-me .about-p {
+        font-size: 15px;
+        line-height: 30px;
+        margin: 1px;
+    }
+    
+    main .caracteristicas .caracter {
+        margin: 45px;
+        min-width: 50%;
+        display: flex;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

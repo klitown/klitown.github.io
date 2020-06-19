@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+	--colorOscuro: #1A1E21;
+	--azulPrimario: #3860EC;
+    --azulSecundario: #2247ce;
+    --fondoPrimario: #323941;
+	--fondoSecundario: #1A1E21;
+	--azulPrimario: #3860EC;
+	--azulSecundario: #2247ce;
+	--rojo: #E50914;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+/* ANIMACIONES */
+@keyframes left-move {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes right-move {
+        0% {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+}
+
+@keyframes up-move {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+    
+}
+
+
+/* FOOTER */
+.contacto {
+    margin: 20px;
+}
+
+.contacto p {
+    text-align: center;
+    font-size: 30px;
+    color: #FFFF;
+    text-transform: uppercase;
+    font-family: 'Lekton', sans-serif;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #FFF;
+
+}
+
+.links a {
+    margin: 0 30px;
+    color: #FFF;
+
+}
+
+.links a i {
+    font-size: 3rem;
+}
