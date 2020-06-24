@@ -28,10 +28,12 @@ header .main {
 
 .navbar {
     margin-top: 30px;
+    border-color: transparent;
 }
 
 .navbar .brand {
     display: flex;
+    justify-content: flex-start;
     margin: 20px 70px;
     color: orangered;
     user-select: none;

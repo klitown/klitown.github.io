@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/intereses.css">
+    <title>Intereses</title>
+</head>
+
+
+
+
+<body>
+    
+</body>
+    <h1>Intereses personales</h1>
+    <p>Hey, estas son algunas cosas que me gustan hacer fuera del ámbito de desarrollo</p>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>Gaming</h2>
+            <img src="/img/gaming.svg" alt="">
+            <br>
+            <a href="#" onclick="toggle()">Más</a>
+        </div>
+        <div class="content">
+            <h2>Naturaleza</h2>
+            <img src="/img/nature.svg" alt="">
+            <br>
+            <a href="#" onclick="toggle2()">Más</a>
+        </div>
+        <div class="content">
+            <h2>Música</h2>
+            <img src="/img/music.svg" alt="">
+            <br>
+            <a href="#" onclick="toggle3()">Más</a>
+        </div>
+        <div class="content">
+            <h2>Fútbol</h2>
+            <img src="/img/football.svg" alt="">
+            <br>
+            <a href="#" onclick="toggle4()">Más</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>Gaming</h2>
+        <p>Juegos FPS como el Counter Strike son mis preferidos. Llegué a jugar 
+            torneos competitivos de este juego :P
+        </p>
+        <a href="#" onclick="toggle()">Close</a>
+    </div>
+    <div id="popup2">
+        <h2>Naturaleza</h2>
+        <p>Relajarme caminando o trotando al aire libre..</p>
+        <a href="#" onclick="toggle2()">Close</a>
+    </div>
+    <div id="popup3">
+        <h2>Música</h2>
+        <p>Escucho mucha música urbana, rap/trap tanto en español como en inglés
+        </p>
+        <a href="#" onclick="toggle3()">Close</a>
+    </div>
+    <div id="popup4">
+        <h2>Fútbol</h2>
+        <p>Y como no, el fútbol. Últimamente miro más competencias de las que juego</p>
+        <a href="#" onclick="toggle4()">Close</a>
+    </div>
+<script>
+    function toggle() {
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+    }
+    function toggle2() {
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup2 = document.getElementById('popup2');
+        popup2.classList.toggle('active')
+    }
+    function toggle3() {
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup3 = document.getElementById('popup3');
+        popup3.classList.toggle('active')
+    }
+    function toggle4() {
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup4 = document.getElementById('popup4');
+        popup4.classList.toggle('active')
+    }
+</script>
+
+</html>
